@@ -1,0 +1,27 @@
+.nav-bar {
+    padding: 10px; /* Padding around the navbar */
+  }
+  
+.nav-bar-content {
+    display: flex; /* Make the list items align side by side */
+    list-style: none; /* Remove default bullet points */
+    margin: auto; /* Remove default margins */
+    justify-content: center; 
+    margin-top: 80px;
+  }
+  
+  .nav-bar-content li {
+    margin: 0 15px; /* Space between list items */
+  }
+  
+  .nav-bar-content a {
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text */
+    gap: 20px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .nav-bar-content a:hover {
+    color: #00bcd4; /* Change text color on hover */
+  }
+  
