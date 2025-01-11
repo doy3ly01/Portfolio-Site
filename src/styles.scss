@@ -9,6 +9,9 @@ $pascal-pink:#e3d5ca;
 body{
     background-color: $background-color;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 a{
     color: $text-color;
@@ -17,6 +20,11 @@ a{
 
 .nav-bar {
     padding: 10px; /* Padding around the navbar */
+    display: block;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   
 .nav-bar-content {
