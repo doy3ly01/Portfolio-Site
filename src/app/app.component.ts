@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgIf } from '@angular/common';
-import { Router, ActivatedRoute, NavigationEnd, Scroll } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
@@ -16,7 +16,7 @@ import { GoalsComponent } from './components/goals/goals.component';
 })
 export class AppComponent implements OnInit {
   title = 'portfolio-site';
-  currentRoute: string = ''; // Track active route
+  currentRoute = ''; // Track active route
 
   constructor(private router: Router) {}
 
