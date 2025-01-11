@@ -1,3 +1,4 @@
+
 .nav-bar {
     padding: 10px; /* Padding around the navbar */
   }
@@ -20,8 +21,13 @@
     gap: 20px;
     transition: color 0.3s ease; /* Smooth color transition on hover */
   }
+
+  .nav-bar-content a{
+    
+  }
   
   .nav-bar-content a:hover {
-    color: #00bcd4; /* Change text color on hover */
+    text-decoration: underline;
+    color: $primary-color;
   }
   

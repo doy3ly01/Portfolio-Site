@@ -1,13 +1,16 @@
-  <main>
-    <div class="nav-bar">
-        <ul class="nav-bar-content">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Goals</a></li>
-        </ul>
-    </div>
-    <section class="page-content">
-      <app-home></app-home>
-    </section>
-  </main>
+  
+      <div class="nav-bar">
+          <ul class="nav-bar-content">
+            <li><a routerLink="/home-component" routerLinkActive="active"  ariaCurrentWhenActive="page">Home</a></li>
+            <li><a routerLink="/about-component" routerLinkActive="active" ariaCurrentWhenActive="page">About Me</a></li>
+            <li><a routerLink="/projects-component" routerLinkActive="active" ariaCurrentWhenActive="page">Projects</a></li>
+            <li><a routerLink="/goals-component" routerLinkActive="active" ariaCurrentWhenActive="page">Goals</a></li>
+          </ul>
+      </div>
+      <section class="page-content">
+        <app-home *ngIf="currentRoute === 'home-component'"></app-home>
+        <app-about *ngIf="currentRoute === 'about-component'"></app-about>
+        <app-projects *ngIf="currentRoute === 'projects-component'"></app-projects>
+        <app-goals *ngIf="currentRoute === 'goals-component'"></app-goals>
+      </section>
+  

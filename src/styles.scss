@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+$background-color: #f6ec35;
+$text-color: #000000;
+$primary-color:#d11013;
+$secondary-color:#f5ebe0;
+$pascal-pink:#e3d5ca;
+
+
+body{
+    background-color: $background-color;
+}
+
+a{
+    color: $text-color;
+}
+
+
+.nav-bar {
+    padding: 10px; /* Padding around the navbar */
+  }
+  
+.nav-bar-content {
+    display: flex; /* Make the list items align side by side */
+    list-style: none; /* Remove default bullet points */
+    margin: auto; /* Remove default margins */
+    justify-content: center; 
+    margin-top: 80px;
+  }
+  
+  .nav-bar-content li {
+    margin: 0 15px; /* Space between list items */
+  }
+  
+  .nav-bar-content a {
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text */
+    gap: 20px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+
+  .nav-bar-content a{
+    
+  }
+  
+  .nav-bar-content a:hover {
+    text-decoration: underline;
+    color: $primary-color;
+  }
+  
